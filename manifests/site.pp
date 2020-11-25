@@ -5,6 +5,6 @@ node default {
    }
  }
    
-node 'pup-m.network.lan'{
+node 'pup-m.network.lan' {
   include role::master_server
 }
