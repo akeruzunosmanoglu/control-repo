@@ -10,7 +10,7 @@ node 'pup-m.network.lan' {
   include stdlib
   file { '/root/README':
     ensure => file,
-    content => $fqdn,
+    content => "welcome to  ${fqdn}\n server",
   }
 }
 
