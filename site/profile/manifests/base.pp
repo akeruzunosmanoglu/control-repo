@@ -1,7 +1,8 @@
 class profile::base {
 
    include rsyslog
-   include rsyslog::config
+   include rsyslog::configin
+   include profile::ssh_server
    user { 'admin':
      ensure => present,
    }
