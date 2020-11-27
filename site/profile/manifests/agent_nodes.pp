@@ -2,6 +2,7 @@ class profile::agent_nodes {
    include dockeragent
    dockeragent::node {'web.network.lan':}
    dockeragent::node {'db.network.lan':}
+   dockeragent::node {'minetest.network.lan':}
    
    host {'web.network.lan':
      ensure => present,
