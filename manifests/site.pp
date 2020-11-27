@@ -7,6 +7,10 @@ node default {
    
 node 'pup-m.network.lan' {
   include role::master_server
+  file { 'root/README':
+    ensure => file,
+    content => $fqdn,
+  }
 }
 
 node /^web/ {
