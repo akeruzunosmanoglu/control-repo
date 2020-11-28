@@ -16,7 +16,7 @@ node 'pup-m.network.lan' {
 }
 
 
-node 'minecraft.network.lan' {
+node 'minetest.network.lan' {
   include role::minecraft_server
 }
 
