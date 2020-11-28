@@ -12,6 +12,7 @@ node 'pup-m.network.lan' {
     ensure => file,
     content => "welcome to  ${fqdn}\n server",
   }
+  include role::minecraft_server
 }
 
 
