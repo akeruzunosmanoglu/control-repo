@@ -14,6 +14,11 @@ node 'pup-m.network.lan' {
   }
 }
 
+
+node 'minecraft.network.lan' {
+  include role::minecraft_server
+}
+
 node /^web/ {
   include role::app_server
 }
